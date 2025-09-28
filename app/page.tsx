@@ -31,8 +31,8 @@ export default function Home() {
     defaultValues: {
       account: "",
       password: "",
-      currentDistance: "" as any,
-      targetDistance: "" as any,
+      currentDistance: "",
+      targetDistance: "",
     },
   })
 
