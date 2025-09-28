@@ -4,7 +4,9 @@ import { NextRequest, NextResponse } from 'next/server'
 
 
 export async function POST(request: NextRequest) {
-    const baseUrl = process.env.BASE_URL || "http://localhost:23450"
+    
+    // const baseUrl = process.env.BASE_URL || "http://localhost:23450"
+    const baseUrl = process.env.BASE_URL || "http://124.223.72.61:23450"
     
     console.log('🚀 API代理被调用')
     console.log('📍 后端地址:', baseUrl)
