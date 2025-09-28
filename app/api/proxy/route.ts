@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function POST(request: NextRequest) {
 
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:8080"
+    const baseUrl = process.env.BASE_URL || "http://localhost:23450"
     try {
         // 获取前端发送的数据
         const body = await request.json()
