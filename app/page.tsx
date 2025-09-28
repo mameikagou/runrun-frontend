@@ -22,7 +22,6 @@ interface AuthFormData {
 }
 
 // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:8080"
-const baseUrl = "/api/proxy"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false)
@@ -87,7 +86,7 @@ export default function Home() {
       console.log("提交数据:", requestData)
       
       // TODO: 替换为实际的API端点
-      const response = await fetch(`${baseUrl}/api/auth`, {
+      const response = await fetch("/api/proxy", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
